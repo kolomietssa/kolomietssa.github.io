@@ -12,6 +12,11 @@ Primary use:
 [ FONT ]*/
 
 @font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
+}
+
+@font-face {
   font-family: PlayfairDisplay-BlackItalic;
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf'); 
 }
@@ -41,11 +46,17 @@ Primary use:
 [ Input ]*/
 
 .wrap-input100 {
-  width: 500px;
-  max-width: 100%;
+  width: 650px;
+  max-width: calc(100% + 110px);
   position: relative;
   background-color: transparent;
   height: 80px;
+}
+
+@media (max-width: 992px) {
+  .wrap-input100 {
+    max-width: 100%;
+  }
 }
 
 /*---------------------------------------------*/
@@ -53,8 +64,8 @@ Primary use:
   display: block;
   width: 100%;
   height: 100%;
-  padding: 0 90px 0 35px;
-  background-color: #fff;
+  padding: 0 80px 0 172px;
+  background-color: #ffe151;
 
   box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
@@ -69,6 +80,13 @@ Primary use:
   -webkit-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
   -o-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
   -ms-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 576px) {
+  .input100 {
+    padding-left: 25px;
+    padding-right: 60px;
+  }
 }
 
 
@@ -93,7 +111,7 @@ Primary use:
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 82px;
+  right: 72px;
   pointer-events: none;
 
   font-family: Poppins-Medium;
@@ -124,7 +142,7 @@ Primary use:
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 88px;
+  right: 78px;
 }
 
 .alert-validate:hover:before {
@@ -204,15 +222,24 @@ Primary use:
   line-height: 1.2;
 }
 
+.m2-txt2 {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #999;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 
 
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .l1-txt1 {
-  font-family: PlayfairDisplay-BlackItalic;
-  font-size: 90px;
+  font-family: PlayfairDisplay-Regular;
+  font-size: 60px;
   color: #333;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 
@@ -227,7 +254,7 @@ Primary use:
 }
 
 .size2 {
-  width: 90px;
+  width: 80px;
   height: 80px;
 }
 
@@ -236,13 +263,22 @@ Primary use:
   height: 36px;
 }
 
+.size4 {
+  width: 172px;
+  height: 80px;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ Width ]*/
 .wsize1 {
-  width: 50%;
+  width: 37%;
 }
 
 .wsize2 {
+  width: 63%;
+}
+
+.wsize3 {
   max-width: 100%;
 }
 
@@ -267,7 +303,9 @@ Primary use:
 
 /*//////////////////////////////////////////////////////////////////
 [ Border ]*/
-
+.bor1 {
+  border-left: 5px solid #333;
+}
 
 
 
@@ -282,10 +320,10 @@ Primary use:
 /*==================================================================
  HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
 ==================================================================*/
-.placeholder0::-webkit-input-placeholder { color: #999999;}
-.placeholder0:-moz-placeholder { color: #999999;}
-.placeholder0::-moz-placeholder { color: #999999;}
-.placeholder0:-ms-input-placeholder { color: #999999;}
+.placeholder0::-webkit-input-placeholder { color: #666;}
+.placeholder0:-moz-placeholder { color: #666;}
+.placeholder0::-moz-placeholder { color: #666;}
+.placeholder0:-ms-input-placeholder { color: #666;}
 
 
 /*---------------------------------------------*/
@@ -328,10 +366,11 @@ Primary use:
 
 /*---------------------------------------------*/
 .how-social {
-  color: #fff;
-  font-size: 22px;
-  background-color: #ccc;
+  color: #666;
+  font-size: 16px;
+  background-color: transparent;
   border-radius: 50%;
+  border: 1px solid #e6e6e6;
 }
 
 .how-social:hover {
@@ -499,7 +538,20 @@ Primary use:
   .respon3 {
     font-size: 60px;
   }
+  
+  /*---------------------------------------------*/
+  .respon4 {
+    width: 5px;
+  }
 
+  .respon4 span {
+    display: none;
+  }
+
+  /*---------------------------------------------*/
+  .respon5 {
+    width: 60px;
+  }
   
 }
 
